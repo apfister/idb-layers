@@ -1,17 +1,79 @@
 {
-  "title": "",
-  "snippet": "",
-  "description": "",
+  "title": "IDB - Sample",
+  "snippet": "Intersecting vector and raster layers with summary statistics",
+  "description": "sdfsdfsdf",
   "portalUrl": "https://www.arcgis.com",
   "oauthappid": "",
   "authMode": "anonymous",
   "apiKey": null,
   "group": "",
-  "webmap": "64a648fbfb8442c8902effa114f7df5d",
+  "webmap": "ec85cfd3d3c647dcb5636d730ac8911e",
   "webscene": "",
   "viewProps": {
     "alphaCompositingEnabled": true
   },
   "container": "view-container",
-  "shareable": []
+  "shareable": [],
+  "layerConfigs": {
+    "AFP Tierras indigenas": {
+      "summaryStatisticDefinitions": [
+        {
+          "definition": {
+            "statisticType": "sum",
+            "onStatisticField": "Shape__Area",
+            "outStatisticFieldName": "AreaSum"
+          },
+          "label": "Area"
+        }
+      ]
+    },
+    "AFP Ecosistemas": {
+      "summaryStatisticDefinitions": [
+        {
+          "definition": {
+            "statisticType": "sum",
+            "onStatisticField": "Shape__Area",
+            "outStatisticFieldName": "AreaSum"
+          },
+          "label": "Area"
+        }
+      ]
+    },
+    "AFP Grandes cuencas hidrograficas": {
+      "summaryStatisticDefinitions": [
+        {
+          "definition": {
+            "statisticType": "sum",
+            "onStatisticField": "Shape__Area",
+            "outStatisticFieldName": "AreaSum"
+          },
+          "label": "Area"
+        }
+      ]
+    },
+    "AFP Tipos climaticos KOEPEN": {
+      "summaryStatisticDefinitions": [
+        {
+          "definition": {
+            "statisticType": "sum",
+            "onStatisticField": "Shape__Area",
+            "outStatisticFieldName": "AreaSum"
+          },
+          "label": "Area"
+        }
+      ]
+    },
+    "AFP Biomas": {
+      "summaryStatisticDefinitions": [
+        {
+          "definition": {
+            "statisticType": "sum",
+            "onStatisticField": "Shape__Area",
+            "outStatisticFieldName": "AreaSum"
+          },
+          "label": "Area"
+        }
+      ]
+    }
+  }
 }
