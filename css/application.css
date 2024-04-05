@@ -1,0 +1,147 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  background-color: var(--calcite-color-background);
+}
+
+/* Calcite Theme Editor: https://esrips.github.io/calcite-theme-editor/ */
+
+.calcite-mode-dark,
+.calcite-mode-light {
+  color-scheme: light;
+  --calcite-mode-name: light;
+  --calcite-color-brand: #388F22;
+  --calcite-color-brand-hover: #2D721B;
+  --calcite-color-brand-press: #225614;
+  --calcite-color-text-1: #1E4A14;
+  --calcite-color-text-2: #1F4E15;
+  --calcite-color-text-3: #245918;
+  --calcite-ui-text-highlight: #388F22;
+  --calcite-color-text-inverse: #ffffff;
+  --calcite-color-text-link: #2D721B;
+  --calcite-link-blue-underline: rgba(56, 143, 34, 0.5);
+  --calcite-color-background: #F7F7F7;
+  --calcite-color-foreground-1: #FFFFFF;
+  --calcite-color-foreground-2: #F2F2F2;
+  --calcite-color-foreground-3: #EDEDED;
+  --calcite-color-inverse: #000000;
+  --calcite-color-inverse-hover: #000000;
+  --calcite-color-inverse-press: #000000;
+  --calcite-color-border-1: #788C74;
+  --calcite-color-border-2: #7F927B;
+  --calcite-color-border-3: #869883;
+  --calcite-color-border-input: #596856;
+  --calcite-ui-icon-color: currentColor;
+  --calcite-color-status-info: #2D721B;
+  --calcite-color-status-success: #308e29;
+  --calcite-color-status-warning: #f1c21b;
+  --calcite-color-status-danger: #D83020;
+  --calcite-color-status-danger-hover: #A82B1E;
+  --calcite-color-status-danger-press: #7C1D13;
+}
+
+
+.esri-widget,
+.esri-search {
+  color: var(--calcite-color-text-2);
+  background-color: var(--calcite-color-foreground-1);
+}
+
+.esri-input,
+.esri-menu {
+  color: var(--calcite-color-text-2);
+  background-color: var(--calcite-color-background);
+}
+
+.esri-menu__list-item--focus,
+.esri-menu__list-item:hover,
+.esri-menu__list-item:focus {
+  background-color: var(--calcite-color-foreground-1);
+}
+
+.esri-widget--button {
+  color: var(--calcite-color-text-1);
+  background-color: var(--calcite-color-foreground-3);
+}
+
+.esri-legend {
+  width: unset !important;
+}
+
+/*
+.esri-widget__heading,
+.esri-bookmarks__bookmark,
+.esri-bookmarks__bookmark-name {
+  color: var(--calcite-color-text-2) !important;
+  background-color: var(--calcite-color-foreground-1) !important;
+}*/
+
+
+calcite-shell[content-behind] #center-container {
+  margin: 0 50px 0 50px;
+}
+
+calcite-navigation[slot="header"] {
+  --calcite-navigation-border-color: var(--calcite-color-brand);
+}
+
+calcite-navigation[slot="header"] [slot] {
+  margin: 0 0.2rem;
+}
+
+calcite-navigation[slot="header"] calcite-action[slot="navigation-action"]:first-of-type {
+  margin-left: 1rem;
+  pointer-events: none;
+}
+
+calcite-navigation[slot="header"] calcite-navigation-logo {
+  pointer-events: none;
+  --calcite-color-text-1: var(--calcite-color-brand);
+}
+
+calcite-navigation calcite-action[slot="navigation-action"] {
+  --calcite-color-icon-color: var(--calcite-color-brand);
+}
+
+calcite-loader#app-loader {
+  --calcite-loader-size: 8rem;
+  align-self: center;
+  justify-self: center;
+}
+
+calcite-modal {
+  --calcite-modal-content-background: var(--calcite-color-background);
+}
+
+calcite-modal [slot="secondary"] calcite-label {
+  --calcite-label-margin-bottom: 0;
+}
+
+calcite-list-item {
+  --calcite-color-text-1: var(--calcite-color-brand);
+}
+
+#center-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#view-container {
+  padding: 0;
+  margin: 0;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#pop-count-label {
+  font-size: 31pt;
+}

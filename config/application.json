@@ -1,0 +1,17 @@
+{
+  "title": "",
+  "snippet": "",
+  "description": "",
+  "portalUrl": "https://www.arcgis.com",
+  "oauthappid": "VmebHbQXcDv0zuin",
+  "authMode": "auto",
+  "apiKey": null,
+  "group": "",
+  "webmap": "64a648fbfb8442c8902effa114f7df5d",
+  "webscene": "",
+  "viewProps": {
+    "alphaCompositingEnabled": true
+  },
+  "container": "view-container",
+  "shareable": []
+}
