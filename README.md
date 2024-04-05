@@ -3,13 +3,15 @@
 Simple application to get population count for user defined area of interest from an Imagery Layer.
 
 ### Web Map
-#### WorldPop - population count
-https://www.arcgis.com/home/item.html?id=64a648fbfb8442c8902effa114f7df5d
+> WorldPop - population count
+> https://www.arcgis.com/home/item.html?id=64a648fbfb8442c8902effa114f7df5d
 
 ### Imagery Layer
-#### WorldPop Total Population 2000-2020 100m
-https://www.arcgis.com/home/item.html?id=8c2db10c952e45b68efdfc78f64267b0
+> WorldPop Total Population 2000-2020 100m
+> https://www.arcgis.com/home/item.html?id=8c2db10c952e45b68efdfc78f64267b0
 
+
+### JavaScript Libraries
 
 This application is built with:
 - [ArcGIS API for Javascript](https://developers.arcgis.com/javascript/latest/api-reference/)
@@ -17,7 +19,7 @@ This application is built with:
 
 ### Deploy
 
-This demo is built as a _static_ web application.
+This demo is built as a _**static**_ web application.
 
 1. Download and copy the root folder to a web accessible location
 2. Update configuration parameters in application.json
