@@ -2,13 +2,18 @@
 
 Simple application to get population count for user defined area of interest from an Imagery Layer.
 
-### Web Map
-> WorldPop - population count\
-> https://www.arcgis.com/home/item.html?id=64a648fbfb8442c8902effa114f7df5d
 
 ### Imagery Layer
 > WorldPop Total Population 2000-2020 100m\
 > https://www.arcgis.com/home/item.html?id=8c2db10c952e45b68efdfc78f64267b0
+ 
+### Web Map
+> WorldPop - population count\
+> https://www.arcgis.com/home/item.html?id=64a648fbfb8442c8902effa114f7df5d
+
+### Demo Application
+> WorldPop - population count\
+> https://geoxc-apps2.bd.esri.com/LivingAtlas/PopulationCount/index.html
 
 
 ### JavaScript Libraries
