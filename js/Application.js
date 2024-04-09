@@ -520,12 +520,16 @@ class Application extends AppBase {
 
               const layer = afpLayers[i];
 
-              const query = layer.createQuery();
+              const lv = view.layerViews.find(
+                (v) => v.layer.title === layer.title
+              );
+
+              const query = lv.createQuery();
               query.geometry = analysisArea;
               query.outFields = [layer.objectIdField];
-              query.outSpatialReference = { wkid: 4326 };
+              // query.outSpatialReference = { wkid: 4326 };
 
-              const results = await layer.queryFeatures(query);
+              const results = await lv.queryFeatures(query);
 
               let geoms = [];
               for (let i = 0; i < results.features.length; i++) {
@@ -544,8 +548,11 @@ class Application extends AppBase {
               }
 
               const intResult = await geometryEngineAsync.intersect(
-                geoms.filter((geom) => geom),
-                webMercatorUtils.webMercatorToGeographic(analysisArea)
+                // geoms.filter((geom) => geom),
+                geoms,
+                analysisArea
+                // geoms.map((g) => webMercatorUtils.webMercatorToGeographic(g)),
+                // webMercatorUtils.webMercatorToGeographic(analysisArea)
               );
 
               cardLoader.style.display = "none";
@@ -556,7 +563,9 @@ class Application extends AppBase {
               layerCardStatisticFooterDiv.innerHTML = `Intersecting features: ${intResult.length}`;
 
               const areas = geodesicUtils.geodesicAreas(
-                intResult,
+                intResult
+                  .filter((g) => g)
+                  .map((g) => webMercatorUtils.webMercatorToGeographic(g)),
                 "square-kilometers"
               );
 
